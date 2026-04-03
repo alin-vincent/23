@@ -60,7 +60,7 @@ st.title("🎬 Netflix Content Intelligence Dashboard")
 def load_data():
     # Use your local Excel file
     # This tells Python to look in the same folder where app.py is located
-    df = pd.read_excel("netflixfinal.csv")
+    df = pd.read_excel("netflix_data.xlsx")
     
     # Fill missing values to prevent errors in charts
     df['country'] = df['country'].fillna("Unknown")
